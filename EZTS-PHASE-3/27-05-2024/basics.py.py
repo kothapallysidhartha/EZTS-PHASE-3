@@ -79,3 +79,10 @@ print(res)
         return curr_max
 """
 
+
+tuples_list = [(1, 2), (), (3, 4), (5,), (), (6, 7, 8)]
+result = []
+for t in tuples_list:
+    if t:  # Check if the tuple is not empty
+        result.append(t)
+print( result)

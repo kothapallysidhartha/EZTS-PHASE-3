@@ -1,4 +1,4 @@
-li=list(map(int,input().split(" ")))
+"""li=list(map(int,input().split(" ")))
 c=0
 maxx=0
 for i in range(0,len(li)):
@@ -10,4 +10,5 @@ for i in range(0,len(li)):
         c=0
     
         
-print(maxx)
+print(maxx)"""
+
