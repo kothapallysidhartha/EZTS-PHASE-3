@@ -48,11 +48,21 @@
 #     print("n")
 #
 
-def num(x):
-    print(x)
-    if x!=1:
-        x-=1
-        num(x)
-n=int(input())
-num(n)
-    
+
+# def num(x):
+#     print(x)
+#     if x!=1:
+#         x-=1
+#         num(x)
+# n=int(input())
+# num(n)
+#
+
+import string
+
+strr = input()
+ne = ""
+for i in strr:
+    if i in string.digits:
+        ne += i
+print(int(ne))
