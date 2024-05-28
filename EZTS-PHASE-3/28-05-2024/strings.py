@@ -60,9 +60,34 @@
 
 import string
 
-strr = input()
-ne = ""
-for i in strr:
-    if i in string.digits:
-        ne += i
-print(int(ne))
+# strr = input()
+# ne = ""
+# for i in strr:
+#     if i in string.digits:
+#         ne += i
+# print(int(ne))
+
+# s=input()
+# l=""+s[:1]
+# for i in range(1,len(s)):
+#     if s[i] != l[-1]:
+#         l+=s[i]
+# print(str(l))
+
+
+data=input()
+rot=int(input())
+res=''
+for i in range(rot):
+    di,mag=input().split()
+    if di.upper()=='L':
+         res +=(data[int(mag):]+data[:int(mag)])[0]
+    elif di.upper()=='R':
+         res +=(data[:int(mag):]+data[int(mag)])[0]
+sublist = [data[i:i+rot] for i in range(len(data))]        
+for subele in sublist:
+    if sorted(subele) == sorted(res):
+        print('Yes')
+        break
+else:
+     print('No')
