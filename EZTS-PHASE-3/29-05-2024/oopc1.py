@@ -51,7 +51,7 @@
 #     return tuple[-1]
 # 
 # simple_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
-# sorted_list = sorted(simple_list, key=get_last_element)
+# sorted_list = sorted(simple_list, key=get_last_element)+
 # print("Result:", sorted_list)
 
 # #sort elements as per the length
@@ -59,3 +59,28 @@
 # li=sorted(li,key=len)
 # print(li)
     
+# class A:
+#     def __init__(self, x=3):
+#         self._x = x
+# 
+# class B(A):
+#     def __init__(self):
+#         super().__init__(5)
+#     
+#     def display(self):
+#         print(self._x)
+# 
+# def main():
+#     obj = B()
+#     obj.display()
+# 
+# main()
+
+
+
+
+            
+        
+#     if(count==1):
+    
+print(lip)
